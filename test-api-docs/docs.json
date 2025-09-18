@@ -1,0 +1,19 @@
+{
+  "theme": "mint",
+  "name": "API Documentation",
+  "colors": {
+    "primary": "#3b82f6"
+  },
+  "navigation": {
+    "groups": [
+      {
+        "group": "API Reference",
+        "pages": [
+          "api/authentication",
+          "api/users",
+          "api/orders"
+        ]
+      }
+    ]
+  }
+}

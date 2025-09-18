@@ -1,0 +1,25 @@
+{
+  "theme": "mint",
+  "name": "User Guides",
+  "colors": {
+    "primary": "#10b981"
+  },
+  "navigation": {
+    "groups": [
+      {
+        "group": "Getting Started",
+        "pages": [
+          "guides/introduction",
+          "guides/quickstart"
+        ]
+      },
+      {
+        "group": "Tutorials",
+        "pages": [
+          "tutorials/basic-setup",
+          "tutorials/advanced-config"
+        ]
+      }
+    ]
+  }
+}

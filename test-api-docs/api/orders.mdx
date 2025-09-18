@@ -1,0 +1,47 @@
+# Orders API
+
+Manage customer orders and transactions.
+
+## Get Order
+
+```http
+GET /api/orders/{id}
+```
+
+### Response
+
+```json
+{
+  "id": "order_123",
+  "user_id": "user_456", 
+  "items": [
+    {
+      "product_id": "prod_789",
+      "quantity": 2,
+      "price": 29.99
+    }
+  ],
+  "total": 59.98,
+  "status": "pending"
+}
+```
+
+## Create Order
+
+```http
+POST /api/orders
+```
+
+### Request Body
+
+```json
+{
+  "user_id": "user_456",
+  "items": [
+    {
+      "product_id": "prod_789", 
+      "quantity": 1
+    }
+  ]
+}
+```
