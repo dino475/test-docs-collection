@@ -1,0 +1,31 @@
+name: Collect Documentation
+
+on:
+  workflow_dispatch:  # Manual trigger for testing
+  schedule:
+    - cron: '0 6 * * *'  # Daily at 6 AM UTC
+
+jobs:
+  collect-docs:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout collection repo
+      uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        fetch-depth: 0
+    
+    - name: Run Multirepo Action
+      uses: mintlify/multirepo-action@updating-to-docs.json
+      with:
+        repos: |
+          - owner: dino475
+            repo: test-api-docs
+            ref: main
+          - owner: dino475
+            repo: test-user-guides
+            ref: main
+        token: ${{ secrets.GITHUB_TOKEN }}
+        target-branch: main
+        force: false

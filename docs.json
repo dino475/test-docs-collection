@@ -1,0 +1,17 @@
+{
+  "theme": "mint",
+  "name": "Combined Documentation",
+  "colors": {
+    "primary": "#6366f1"
+  },
+  "navigation": {
+    "groups": [
+      {
+        "group": "Welcome",
+        "pages": [
+          "overview"
+        ]
+      }
+    ]
+  }
+}
