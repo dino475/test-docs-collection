@@ -979,6 +979,28 @@
           "test-user-guides/tutorials/basic-setup",
           "test-user-guides/tutorials/advanced-config"
         ]
+      },
+      {
+        "group": "API Reference",
+        "pages": [
+          "test-api-docs/api/authentication",
+          "test-api-docs/api/users",
+          "test-api-docs/api/orders"
+        ]
+      },
+      {
+        "group": "Getting Started",
+        "pages": [
+          "test-user-guides/guides/introduction",
+          "test-user-guides/guides/quickstart"
+        ]
+      },
+      {
+        "group": "Tutorials",
+        "pages": [
+          "test-user-guides/tutorials/basic-setup",
+          "test-user-guides/tutorials/advanced-config"
+        ]
       }
     ]
   }
